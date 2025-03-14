@@ -1,0 +1,17 @@
+#include<stdio.h>
+int fac(int n);
+int main()
+{
+  printf("fac is %d",fac(5));
+return 0;
+}
+int fac(int n)
+{
+  if(n==1)
+  {
+    return 1;
+  }
+  int facNm1=fac(n-1);
+  int facN=facNm1*n;
+  return facN;
+}
